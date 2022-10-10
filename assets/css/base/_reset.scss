@@ -1,0 +1,76 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,
+textarea, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1;
+  font-family: Nunito, "PingFang SC", "Source Han Sans CN", BlinkMacSystemFont, "Microsoft YaHei UI", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+  // -webkit-text-size-adjust: none;
+  // -moz-osx-font-smoothing: grayscale;
+  // -webkit-font-smoothing: antialiased;
+  color: #292C33;
+  overflow: overlay;
+  background: #FFFFFF;
+}
+
+button, input, textarea, pre {
+  font-family: Nunito, "PingFang SC", "Source Han Sans CN", BlinkMacSystemFont, "Microsoft YaHei UI", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+}
+
+button {
+  background: transparent;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// 给输入框设置行高的话，当选中文字时蓝色背景也会和设定的行高一样高，导致登录注册里蓝色背景与自定义的 placeholder 文案重叠，这里全局设定为 normal 以解决该问题
+input {
+  line-height: normal !important;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+
+input[type=password]::-webkit-credentials-auto-fill-button {
+  display: none !important;
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}
+
+
+.grecaptcha-badge { 
+  display: none; 
+}
+.noscroll{
+  overflow: hidden;
+}

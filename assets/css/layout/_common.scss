@@ -1,0 +1,148 @@
+@import '../utils/variables';
+
+// 溢出显示省略号
+.txt-ovfl {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 10px;
+  &.nopadd {
+    padding-right: 0;
+  }
+}
+.txt-ovfl-row {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding-right: 10px;
+  &.nopadd {
+    padding-right: 0;
+  }
+  &.row2 {
+    -webkit-line-clamp: 2;
+  }
+  &.row6 {
+    -webkit-line-clamp: 6;
+  }
+}
+
+// 自定义滚动条
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #575656;
+  background-clip: content-box;
+  border: 3px solid transparent;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-corner {
+  display: none;
+}
+// 自定义滚动条
+textarea {
+  &::-webkit-scrollbar-thumb {
+    background-color: #353536;
+  }
+}
+
+/* 按钮点击效果
+-------------------------- */
+.taplight, .taplight-bf {
+  position:relative;
+  cursor: pointer;
+  user-select: none;
+}
+.taplight:not(.invalid)::after,
+.taplight-bf:not(.invalid)::before {
+  content:"";
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:100%;
+  height:100%;
+  border: inherit;
+  border-radius: inherit;
+  border-color: #000;
+  transform: translate(-50%,-50%);
+  pointer-events:none;
+  transition:opacity .4s ease;
+  background: #000;
+  opacity: 0;
+}
+.taplight:active::after,
+.taplight-bf:active::before {
+  opacity: 0.13;
+  transition-duration:0s;
+}
+.taplight2 {
+  transition:opacity .4s ease .05s;
+  user-select: none;
+  cursor: pointer;
+}
+.taplight3 {
+  user-select: none;
+  cursor: pointer;
+  .tap-chd {
+    transition:opacity .4s ease .05s;
+  }
+}
+.taplight2:active:not(.is-disabled),
+.taplight3:active .tap-chd {
+  opacity:.4;
+  transition-duration:0s;
+  transition-delay: 0s;
+}
+
+@keyframes reverse-rotating {
+  0% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes mask-show {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* dialog 动画
+-------------------------- */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+.zoom-enter-active, .zoom-leave-active {
+  transition: transform .2s, opacity .2s;
+}
+.zoom-enter {
+  transform: scale3d(1.1, 1.1, 1.1);
+  opacity: 0;
+}
+.zoom-leave-to {
+  opacity: 0;
+}
+
+.mico {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.noscroll {
+  overflow: hidden;
+}

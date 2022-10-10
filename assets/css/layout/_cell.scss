@@ -1,0 +1,40 @@
+.section {
+  // max-width: 1400px;
+  max-width: 1200px;
+  padding: 0 55px;
+  margin: 0 auto;
+}
+// .section1 {
+//   max-width: 1240px;
+//   padding: 0 24px;
+//   margin: 0 auto;
+// }
+// 有背景色的 section 给一个最小宽度，以防出现横向滚动条的时候滚到右边背景色会消失
+// .bg-section {
+//   min-width: 1248px;
+// }
+.section-pad {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  &.no-padd_b {
+    padding-bottom: 0;
+  }
+}
+.section-pad2 {
+  padding: 0 24px;
+  margin: 0 auto;
+}
+.gray-section {
+  background: #F7F8FA;
+}
+@media screen and (max-width: 1200px) {
+  .section {
+    padding: 0 48px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    padding: 0 24px;
+  }
+}

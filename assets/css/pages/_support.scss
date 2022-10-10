@@ -1,0 +1,139 @@
+
+.section {
+  max-width: 1200px;
+  padding: 0;
+}
+.support {
+  font-family: 'HarmonyOS Sans';
+  .top-box {
+    padding-top: 153px;
+    position: relative;
+    .t1 {
+      margin-bottom: 150px;
+    }
+    &::before {
+      content: '';
+      width: 603px;
+      height: 840px;
+      background: url('@/assets/img/support/bg1.png') center center no-repeat;
+      background-size: 603px;
+      position: absolute;
+      top: 37px;
+      left: -312px;
+      pointer-events: none;  // 穿透
+      opacity: 0.5;
+      z-index: -1;
+    }
+    &::after {
+      content: '';
+      width: 223px;
+      height: 310px;
+      background: url('@/assets/img/support/bg2.png') 0 0 no-repeat;
+      background-size: 223px;
+      position: absolute;
+      top: 193px;
+      right: -103px;
+      pointer-events: none;  // 穿透
+      opacity: 0.3;
+      z-index: -1;
+    }
+  }
+  .t1 {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  .t2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 140%;
+    color: #FFFFFF;
+  }
+
+  .t3 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .c1 {
+    font-size: 34px;
+    line-height: 140%;
+    color: #98A0B5;
+  }
+
+  .title1-box {
+    margin: 162px auto 142px;
+    img {
+      width: 41px;
+      object-fit: contain;
+      margin-right: 16px;
+    }
+  }
+
+  .support-flex {
+    li {
+      margin-right: 40px;
+      // position: relative;
+      .spacer {
+        width: 1px;
+        height: 376px;
+        background: url('@/assets/img/support/spacer.png') center center no-repeat;
+        background-size: 100%;
+        margin-right: 40px;
+      }
+      img {
+        width: 160px;
+        object-fit: contain;
+        margin-bottom: 45px;
+      }
+      .t3 {
+        width: 330px;
+        word-break: break-word;
+      }
+    }
+  }
+
+  .quest-box {
+    .c1 {
+      margin-top: 28px;
+      text-align: center;
+    }
+    .title1-box {
+      margin: 150px auto 64px auto;
+    }
+    .quest-item {
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+      .quest {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 52px 32px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        p {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 140%;
+          color: #FFFFFF;
+        }
+        i {
+          font-size: 36px;
+          color: #FFFFFF;
+        }
+      }
+      .content {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 36px 60px 64px 60px;
+        background: #202021;
+        border-radius: 16px;
+      }
+    }
+  }
+}

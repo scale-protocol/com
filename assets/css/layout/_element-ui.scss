@@ -1,0 +1,111 @@
+.el-button {
+  &.sty1-button {
+    background: #000000 !important;
+    padding: 6px 16px !important;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff !important;
+    border: none;
+  }
+  &.sty2-button {
+    background: linear-gradient(90deg, #A8FCB2 0%, #6BCDF7 100%) !important;
+    padding: 16px 55px;
+    border-radius: 40px;
+    font-family: 'Montserrat';
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #070707 !important;
+  }
+  &.sty3-button{
+    background: #000000 !important;
+    padding: 20px 65.5px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff !important;
+    border: none;
+    border-radius: 75px;
+  }
+  &.sty4-button {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: #fff !important;
+    &.ml {
+      margin-left: 24px;
+    }
+  }
+}
+
+.el-input {
+  &.sty1-input {
+    font-size: 24px;
+    line-height: 140%;
+    .el-input__inner {
+      height: 80px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 200px;
+      border: none;
+      padding: 0 14px 0 80px;
+    }
+
+    .el-input__inner::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+    .el-input__suffix {
+      top: 12px;
+      right: 14px;
+    }
+  }
+}
+
+.el-message {
+  &.sty1-message {
+    min-width: 157px;
+    background: linear-gradient(0deg, rgba(255, 217, 83, 0.2), rgba(255, 217, 83, 0.2)), #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 9px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+    font-weight: 500;
+    border: 1px solid #fff;
+    i {
+      color: #000;
+      font-size: 20px;
+      margin-right: 8px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1088px) {
+  .el-button {
+    &.sty4-button {
+      &.ml {
+        margin-left: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .el-button {
+    &.sty1-button {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .el-button {
+    &.sty3-button {
+      width: 247px;
+      padding: 14px 14px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}

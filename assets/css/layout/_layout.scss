@@ -1,0 +1,73 @@
+.mui-flex {
+  display: flex;
+}
+
+// 自动换行的 flex
+.mui-fl-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// 竖形排列的 flex
+.mui-fl-col{
+  display: flex;
+  flex-direction: column;
+}
+
+// 上下居中的 flex
+.mui-fl-vert {
+  display: flex;
+  align-items: center;
+}
+
+// 左右居中的 flex
+.mui-fl-hori {
+  display: flex;
+  justify-content: center;
+}
+
+// 上下左右居中的 flex
+.mui-fl-central {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// 置于底部的 flex
+.mui-fl-vert_end {
+  display: flex;
+  align-items: flex-end;
+}
+
+// 置于最右的 flex
+.mui-fl-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mui-fl-btw {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mui-fl-str {
+  display: flex;
+  align-items: stretch;
+}
+
+.mui-shr-0 {
+  flex-shrink: 0;
+}
+
+.mui-fl-1 {
+  flex: 1;
+}
+
+.mui-fl-1-ovhide {
+  flex: 1;
+  overflow: hidden;
+}
+
+.mui-ma-vert {
+  margin: 0 auto;
+}
