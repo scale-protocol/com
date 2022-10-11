@@ -44,7 +44,7 @@ export default {
     { src: '@/plugins/element-ui', ssr: true },
     '@/plugins/axios',
     '@/plugins/common',
-    '@/plugins/ga'
+    { src: '@/plugins/ga', mode: 'client' }
   ],
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -85,5 +85,8 @@ export default {
   },
   server: {
     host: '0.0.0.0'
+  },
+  router: {
+    middleware: 'unknownRoute'
   }
 }
