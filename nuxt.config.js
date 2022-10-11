@@ -30,6 +30,10 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: '//at.alicdn.com/t/c/font_3113451_0fm3big4dxg8.css' }
+    ],
+    script: [
+      { src: 'https://www.googletagmanager.com/gtag/js?id=G-35R4FYLXJV', async: true },
+      { src: '/gtag.js' }
     ]
   },
 
