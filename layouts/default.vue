@@ -67,7 +67,7 @@
           <p>Trading Everywhere Anytime</p>
         </div>
         <p class="copyright0">
-          2020-2021 scale.exchange All rights reserved.
+          2022 scale.exchange All rights reserved.
         </p>
         <div class="right">
           <p class="t">
@@ -76,11 +76,10 @@
           <ul class="mui-fl-vert">
             <li v-for="(item, index) of footerArr" :key="index" :class="{'mui-fl-vert': 1, 'email': index === 0}" @click="handleClk(item)">
               <template v-if="index === 0">
-                <a v-if="item.url !== ''" :href="item.url" target="_blank">
+                <a :href="item.url" target="_blank" class="mui-fl-vert">
                   <i :class="[item.icon]" />
+                  <span>Support</span>
                 </a>
-                <i v-else :class="[item.icon]" />
-                <span>Support</span>
               </template>
               <template v-else>
                 <a v-if="item.url !== ''" :href="item.url" target="_blank">
@@ -93,7 +92,7 @@
         </div>
 
         <p class="copyright1">
-          2020-2021 scale.exchange All rights reserved.
+          2022 scale.exchange All rights reserved.
         </p>
       </div>
     </footer>
@@ -115,20 +114,34 @@ export default {
       ],
       footerArr: [
         {
+          key: 'email',
           icon: 'mico-email',
-          url: 'https://twitter.com/HydroWallet'
+          url: 'mailto:ScaleProtocol@Gmail.com'
         },
         {
+          key: 'discord',
+          icon: 'mico-discord',
+          url: 'https://discord.gg/WgyNUdK2eJ'
+        },
+        {
+          key: 'telegram',
+          icon: 'mico-telegram',
+          url: 'https://t.me/Scaleexchange'
+        },
+        {
+          key: 'twitter',
           icon: 'mico-twitter',
-          url: 'https://discord.com/invite/hydrowallet'
+          url: 'https://twitter.com/ScaleProtocol'
         },
         {
+          key: 'github',
           icon: 'mico-github',
-          url: 'https://medium.com/@hydrolabs.wallet'
+          url: 'https://github.com/ScaleProtocol/protocol'
         },
         {
+          key: 'medium',
           icon: 'mico-medium',
-          url: 'https://medium.com/@hydrolabs.wallet'
+          url: 'https://medium.com/@scaleprotocol'
         }
       ],
       isScroll: false
@@ -155,7 +168,7 @@ export default {
         customClass: 'sty1-message mui-fl-vert mui-fl-hori',
         duration: 3000,
         iconClass: 'mico-warn',
-        offset: 88
+        offset: 102
       })
     },
     handleShowNav () {
@@ -325,6 +338,9 @@ export default {
             border-radius: 4px;
             position: relative;
             margin-right: 25px;
+            a {
+              color: #69D2F5;
+            }
             i {
               font-size: 20px;
               margin-right: 4px;
