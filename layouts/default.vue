@@ -119,14 +119,14 @@ export default {
           url: 'mailto:ScaleProtocol@Gmail.com'
         },
         {
-          key: 'discord',
-          icon: 'mico-discord',
-          url: 'https://discord.gg/WgyNUdK2eJ'
-        },
-        {
           key: 'telegram',
           icon: 'mico-telegram',
           url: 'https://t.me/Scaleexchange'
+        },
+        {
+          key: 'discord',
+          icon: 'mico-discord',
+          url: 'https://discord.gg/WgyNUdK2eJ'
         },
         {
           key: 'twitter',

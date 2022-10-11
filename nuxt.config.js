@@ -29,7 +29,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: '//at.alicdn.com/t/c/font_3113451_7l6q5ro55qp.css' }
+      { rel: 'stylesheet', href: '//at.alicdn.com/t/c/font_3113451_tgzqrnvkw1h.css' }
     ],
     script: [
       { src: 'https://www.googletagmanager.com/gtag/js?id=G-35R4FYLXJV', async: true },
