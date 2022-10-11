@@ -43,8 +43,7 @@ export default {
   plugins: [
     { src: '@/plugins/element-ui', ssr: true },
     '@/plugins/axios',
-    '@/plugins/common',
-    { src: '@/plugins/ga', mode: 'client' }
+    '@/plugins/common'
   ],
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
