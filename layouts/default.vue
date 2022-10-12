@@ -1,5 +1,5 @@
 <template>
-  <div :class="{'wrap mui-fl-col mui-fl-btw': 1, 'index': $route.name === 'index'}">
+  <div :class="{'wrap mui-fl-col mui-fl-btw': 1, 'index': $route.name === 'index' || $route.name === 't'}">
     <div :class="{'mui-header-wrap': isScroll}">
       <div class="holder" />
       <header class="mui-header">
@@ -48,7 +48,7 @@
             <div class="language taplight2 mui-fl-vert">
               <i class="mico-global icon-global" />
               <span>EN</span>
-              <i class="mico-arrow-right icon-arrow" />
+              <!-- <i class="mico-arrow-right icon-arrow" /> -->
             </div>
             <m-button round class="sty1-button" @click="handleTip">
               Launch App
@@ -471,6 +471,9 @@ export default {
       }
       .launch-app {
         display: flex;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid rgb(237, 237, 237);
       }
       .phone-header-overlay, .launch-app {
         &::after {

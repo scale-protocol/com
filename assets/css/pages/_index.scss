@@ -159,7 +159,6 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 0;
     bottom: 0;
     margin: auto;
     z-index: -1;
@@ -214,6 +213,19 @@
     }
   }
 }
+
+@media screen and (max-width: 1250) {
+  .section-3 {
+    ul {
+      li {
+        img {
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .section-3 {
     ul {
@@ -243,9 +255,6 @@
           .d {
             font-size: 20px;
           }
-        }
-        img {
-          width: 40%;
         }
       }
     }
@@ -370,6 +379,8 @@
     &::after {
       width: 227px;
       height: 294px;
+      background: url('~@/assets/img/sell-buy-phone.png') no-repeat;
+      background-size: 100%;
     }
     .t1 {
       font-size: 18px;
