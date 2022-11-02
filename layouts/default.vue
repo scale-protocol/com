@@ -121,7 +121,7 @@ export default {
         {
           key: 'telegram',
           icon: 'mico-telegram',
-          url: 'https://t.me/Scaleexchange'
+          url: 'https://t.me/scaleprotocol_official'
         },
         {
           key: 'discord',
