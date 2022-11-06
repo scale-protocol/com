@@ -108,7 +108,7 @@ export default {
       navArr: [
         { id: '#trade', text: 'Trade', index: 0, href: '' },
         { id: '#pool', text: 'Pool', index: 1, href: '' },
-        { id: '#marketplace', text: 'Marketplace', index: 2, href: '' },
+        // { id: '#marketplace', text: 'Marketplace', index: 2, href: '' },
         { id: '#whitepaper', text: 'Whitepaper', index: 3, href: '/whitepaper.pdf' },
         { id: '#docs', text: 'Docs', index: 4, href: 'https://scaleprotocol.gitbook.io/scale-protocol-1/' }
       ],
