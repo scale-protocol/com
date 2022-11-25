@@ -126,7 +126,7 @@ export default {
         {
           key: 'discord',
           icon: 'mico-discord',
-          url: 'https://discord.gg/WgyNUdK2eJ'
+          url: 'https://discord.gg/VYXxcQDfZP'
         },
         {
           key: 'twitter',

@@ -11,9 +11,9 @@
         <m-button class="sty3-button" @click="handleTip">
           Launch App
         </m-button>
-        <p class="solana mui-fl-vert">
+        <p class="sui mui-fl-vert">
           <span>Powered by</span>
-          <img src="~@/assets/img/solana.png" alt="">
+          <img src="~@/assets/img/sui.png" alt="">
         </p>
         <img src="~@/assets/img/banner.png" alt="" class="img-banner">
       </div>
@@ -136,8 +136,8 @@ export default {
         },
         {
           id: 3,
-          title: 'None Latency',
-          desc: 'Pricing of openning or closing a position is base on timestamp and solana slot.',
+          title: 'Trading Depth',
+          desc: 'Allows you to avoid slippage losses when closing large positions.',
           img: require('@/assets/img/choose-4.png')
         }
       ],
