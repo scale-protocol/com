@@ -37,7 +37,7 @@
               </li>
 
               <li class="mui-fl-central launch-app">
-                <m-button class="sty3-button" @click="handleTip">
+                <m-button class="sty3-button" @click="toLaunchApp">
                   Launch App
                 </m-button>
               </li>
@@ -50,7 +50,7 @@
               <span>EN</span>
               <!-- <i class="mico-arrow-right icon-arrow" /> -->
             </div>
-            <m-button round class="sty1-button" @click="handleTip">
+            <m-button round class="sty1-button" @click="toLaunchApp">
               Launch App
             </m-button>
           </div>
@@ -110,7 +110,8 @@ export default {
         { id: '#pool', text: 'Pool', index: 1, href: '' },
         // { id: '#marketplace', text: 'Marketplace', index: 2, href: '' },
         { id: '#whitepaper', text: 'Whitepaper', index: 3, href: '/whitepaper.pdf' },
-        { id: '#docs', text: 'Docs', index: 4, href: 'https://scaleprotocol.gitbook.io/scale-protocol-1/' }
+        { id: '#docs', text: 'Docs', index: 4, href: 'https://scaleprotocol.gitbook.io/scale-protocol-1/' },
+        { id: '#faucet', text: 'Faucet', index: 4, href: 'https://trade.scale.exchange/airdrop' }
       ],
       footerArr: [
         {
@@ -185,6 +186,9 @@ export default {
     },
     handleScroll (e) {
       this.isScroll = window.scrollY > 0
+    },
+    toLaunchApp () {
+      window.open('https://trade.scale.exchange')
     }
   }
 }

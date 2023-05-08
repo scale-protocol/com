@@ -8,7 +8,7 @@
         <p class="desc">
           Trading Everywhere Anytime
         </p>
-        <m-button class="sty3-button" @click="handleTip">
+        <m-button class="sty3-button" @click="toLaunchApp">
           Launch App
         </m-button>
         <p class="sui mui-fl-vert">
@@ -146,14 +146,8 @@ export default {
     }
   },
   methods: {
-    handleTip () {
-      this.$message({
-        message: 'Coming soon',
-        customClass: 'sty1-message mui-fl-vert mui-fl-hori',
-        duration: 3000,
-        iconClass: 'mico-warn',
-        offset: 88
-      })
+    toLaunchApp () {
+      window.open('https://trade.scale.exchange')
     }
   }
 }
