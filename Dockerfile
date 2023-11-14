@@ -1,4 +1,4 @@
-FROM hub.bitkinetic.com/public/node:14.15.2-alpine
+FROM node:14.15.2-alpine
 LABEL MAINTAINER="lihua <lihuaio.com@gmail.com>"
 ENV TZ "Asia/Shanghai"
 ENV TERM xterm
